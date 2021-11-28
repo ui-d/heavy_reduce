@@ -56,3 +56,10 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const averageNumber = numbers.reduce((acc, val) => {
     return acc + val;
 }, 0) / numbers.length;
+
+// reverse array
+
+const carsArray = ["A4", "A6", "A8", "X5", "X6", "X7", "C", "E", "S"];
+
+const reversedArray = carsArray.reduce((acc, val) => { return [val,...acc]; }, []);
+
