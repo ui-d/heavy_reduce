@@ -27,10 +27,17 @@ let concatedArrays = cars.reduce((acc, val) => {
     return acc.concat(val.model);
 }, []);
 
-concatedArrays
+// find max value
 
+const dates = [
+    '2019/06/01',
+    '2018/06/01',
+    '2019/09/01', // This is the most recent date, but how to find it?
+    '2018/09/01'
+].map(v => new Date(v));
 
-
-
+let maxDate = dates.reduce((acc, val) => {
+    return acc > val ? acc : val;
+});
 
 
