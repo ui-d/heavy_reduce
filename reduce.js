@@ -47,3 +47,12 @@ const [initialValue] = values;
 
 const minValue = values.reduce((acc, val) => {Math.min(acc, val)}, initialValue);
 const maxValue = values.reduce((acc, val) => {Math.max(acc, val)}, initialValue);
+
+
+// return average value
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const averageNumber = numbers.reduce((acc, val) => {
+    return acc + val;
+}, 0) / numbers.length;
